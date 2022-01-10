@@ -19,7 +19,7 @@
     <script src="app.js" 
             defer></script>
 </head>
-<body>
+<body class="bg-primary">
     <div class="container-fluid">
         <div class="row">
           <div class="col-8 bg-primary">
@@ -50,6 +50,69 @@
                     12:30<span id="am-pm">AM</span>
                 </div>
             </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 py-5">
+            <div class="current-info">
+              <div class="main-info">
+                <img id="wicon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="main-current-information">Rainy</div>
+              </div>
+              <div class="others" id="current-weather-items">
+                  <div class="weather-item">
+                    <p>Current temp</p>
+                    <p>30&#176;C</p>
+                </div>
+                <div class="weather-item">
+                    <p>Humidity</p>
+                    <p>12%</p>
+                </div>
+                <div class="weather-item">
+                    <p>Pressure</p>
+                    <p>1013 hPa</p>
+                </div>
+                <div class="weather-item">
+                    <p>Wind speed</p>
+                    <p>50 km/h</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 py-5">
+            <div class="weather-forecast justify-content-center align-items-center h-100">
+            <div class="weather-forecast-item">
+                <div class="day">pon</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="main-current-info">rainy</div>
+                <div class="temp">30&#176;C</div>
+              </div>
+              <div class="weather-forecast-item">
+                <div class="day">uto</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="main-current-info">rainy</div>
+                <div class="temp">30&#176;C</div>
+              </div>
+              <div class="weather-forecast-item">
+                <div class="day">sri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="main-current-info">rainy</div>
+                <div class="temp">30&#176;C</div>
+              </div>
+              <div class="weather-forecast-item">
+                <div class="day">cet</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="main-current-info">rainy</div>
+                <div class="temp">30&#176;C</div>
+              </div>
+              <div class="weather-forecast-item">
+                <div class="day">pet</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="main-current-info">rainy</div>
+                <div class="temp">30&#176;C</div>
+              </div>
+            </div>
+        </div>
+          </div>
         </div>
       </div>
 </body>
