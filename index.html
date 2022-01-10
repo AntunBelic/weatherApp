@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link   rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+    <link   rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" 
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" 
+            defer></script>
+    <script src="app.js" 
+            defer></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-8 bg-primary">
+            <input type="text" class="city-search" placeholder="Enter location" id="input"/>
+            <button type="button" id="search" class="fas fa-search"></button>
+          </div>
+          <div class="col-4 bg-primary toggler-box">
+            <div class="toggler">
+                <input type="checkbox" class="language-checkbox" id="chk-l" />
+                <label class="label-language" for="chk-l">
+                    <small class="lang hr">Hr</small>
+                    <small class="lang eng">Eng</small>
+                    <div class="ball"></div>
+                </label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 bg-secondary"></div>
+            <div class="col-9 col-sm-6 bg-secondary">
+                <div class="time-zone" id="time-zone">Donji Miholjac</div>
+              </div>
+            <div class="col-3 col-sm-3 bg-secondary date-container">
+                <div class="date" id="date">
+                            04.01.2022
+                </div>
+                <div class="time" id="time">
+                    12:30<span id="am-pm">AM</span>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

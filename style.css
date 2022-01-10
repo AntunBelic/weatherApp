@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* SEARCH */
+
+.city-search {
+  background-color: transparent;
+  color: aliceblue;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+  outline-style: none;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 10px;
+}
+.city-search::placeholder {
+  color: aliceblue;
+  font-size: 1rem;
+  padding-left: 10px;
+}
+#search {
+  color: aliceblue;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* TOGGLE */
+
+.language-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label-language {
+  background-color: rgba(43, 42, 42, 0.589);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 62px;
+  transform: scale(1);
+  margin-bottom: 0px;
+}
+
+.label-language .ball {
+  background-color: aliceblue;
+  border-radius: 25px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 31px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.language-checkbox:checked + .label-language .ball {
+  transform: translateX(27px);
+}
+
+.lang {
+  color: aliceblue;
+  padding-left: 2px;
+}
+
+.toggler-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* TITLE AND TIME*/
+
+.time-zone {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
+.date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: aliceblue;
+}
+
+/* MEDIA */
+
+@media (max-width: 570px) {
+  /* SEARCH */
+
+  .city-search {
+    font-size: 0.6rem;
+    margin: 6px;
+  }
+  .city-search::placeholder {
+    color: aliceblue;
+    font-size: 0.6rem;
+    padding-left: 10px;
+  }
+  #search {
+    font-size: 0.6rem;
+  }
+
+  /* TOGGLE */
+
+  .label-language {
+    padding: 4px;
+    height: 18px;
+    width: 46px;
+    transform: scale(1);
+    margin-bottom: 0px;
+    justify-content: flex-end;
+  }
+
+  .label-language .ball {
+    top: 1px;
+    left: 1px;
+    height: 16px;
+    width: 23px;
+  }
+
+  .language-checkbox:checked + .label-language .ball {
+    transform: translateX(21px);
+  }
+
+  .lang.hr {
+    margin-top: 2px;
+    margin-right: 6px;
+    font-size: 0.6rem;
+  }
+  .lang.eng {
+    margin-top: 2px;
+    font-size: 0.6rem;
+  }
+
+  /* TITLE AND TIME*/
+
+  .time-zone {
+    font-size: 1.9rem;
+  }
+  .date-container {
+    font-size: 0.9rem;
+  }
+}
