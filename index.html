@@ -19,67 +19,60 @@
     <script src="app.js" 
             defer></script>
 </head>
-<body class="bg-primary">
+<body>
     <div class="container-fluid">
         <div class="row">
-          <div class="col-8 bg-primary">
-            <input type="text" class="city-search" placeholder="Enter location" id="input"/>
-            <button type="button" id="search" class="fas fa-search"></button>
+          <div class="col-8">
+            <div class="search-container">
+              <input type="text" class="city-search" placeholder="Enter location" id="input"/>
+              <button type="button" id="search" class="fas fa-search"></button>
           </div>
-          <div class="col-4 bg-primary toggler-box">
-            <div class="toggler">
-                <input type="checkbox" class="language-checkbox" id="chk-l" />
-                <label class="label-language" for="chk-l">
-                    <small class="lang hr">Hr</small>
-                    <small class="lang eng">Eng</small>
-                    <div class="ball"></div>
-                </label>
+          </div>
+          <div class="col-4 date-container">
+            <div class="date" id="date">
+              
+            </div>
+            <div class="time" id="time">
+              
             </div>
           </div>
         </div>
         <div class="row">
-            <div class="col-sm-3 bg-secondary"></div>
-            <div class="col-9 col-sm-6 bg-secondary">
-                <div class="time-zone" id="time-zone">Donji Miholjac</div>
+          
+            <div class="col-12 glass">
+                <div class="time-zone" id="time-zone"></div>
               </div>
-            <div class="col-3 col-sm-3 bg-secondary date-container">
-                <div class="date" id="date">
-                            04.01.2022
-                </div>
-                <div class="time" id="time">
-                    12:30<span id="am-pm">AM</span>
-                </div>
-            </div>
+        
         </div>
         <div class="row">
-          <div class="col-12 col-md-6 py-5">
-            <div class="current-info">
+          <div class="col-12 col-lg-6 col-xxl-4 my-auto curr-wrap-div">
+            <div class="current-info glass">
               <div class="main-info">
-                <img id="wicon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="main-current-information">Rainy</div>
+                <img id="wicon" src="#" alt="weather icon" class="w-icon">
+                <div class="main-current-information"></div>
               </div>
               <div class="others" id="current-weather-items">
                   <div class="weather-item">
                     <p>Current temp</p>
-                    <p>30&#176;C</p>
+                    <p>&#176;C</p>
                 </div>
                 <div class="weather-item">
                     <p>Humidity</p>
-                    <p>12%</p>
+                    <p>%</p>
                 </div>
                 <div class="weather-item">
                     <p>Pressure</p>
-                    <p>1013 hPa</p>
+                    <p>hPa</p>
                 </div>
                 <div class="weather-item">
                     <p>Wind speed</p>
-                    <p>50 km/h</p>
+                    <p>km/h</p>
                 </div>
               </div> 
             </div>
           </div>
-          <div class="col-12 col-md-6 py-5">
-            <div class="weather-forecast justify-content-center align-items-center h-100">
+          <div class="col-12 col-lg-6 col-xxl-4 curr-wrap-div">
+            <div id="weather-forecast" class="weather-forecast justify-content-center align-items-center h-100 mx-auto">
             <div class="weather-forecast-item">
                 <div class="day">pon</div>
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
