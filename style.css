@@ -205,13 +205,13 @@ img.w-icon {
 .glass {
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.4),
     rgba(255, 255, 255, 0)
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0px 9px 42px rgba(0, 0, 0, 0.37);
   color: rgb(10, 47, 80);
 }
 
